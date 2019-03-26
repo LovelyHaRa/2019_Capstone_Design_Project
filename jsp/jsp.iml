@@ -9,7 +9,13 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src" />
+        </sourceRoots>
       </configuration>
+      <facet type="webservices" name="WebServices">
+        <configuration ws.engine="Apache Axis" />
+      </facet>
     </facet>
   </component>
 </module>
