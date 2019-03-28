@@ -1,6 +1,33 @@
-.imgIcon {
-  width: 50%;
-  height: 50%;
+.imgshuffle {
+  background: url("../images/icon/shuffle.svg") no-repeat center;
+  background-size: 80%;
+  height: 100%;
+  border: 1px solid #ced4da;
+}
+
+.imgsearch {
+  background: url("../images/icon/search.svg") no-repeat center;
+  background-size: 80%;
+  height: 100%;
+  border: 1px solid #ced4da;
+}
+
+.imggo {
+  background: url("../images/icon/go.svg") no-repeat center;
+  background-size: 80%;
+  height: 100%;
+  border: 1px solid #ced4da;
+}
+
+.btngroup {
+  padding: 0px;
   margin: 0 auto;
-  content:"\f221"
+}
+
+.btnsearch {
+  border-radius: 0px;
+}
+
+.customnavbar {
+  padding: 0.2rem 0.5rem;
 }
