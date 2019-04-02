@@ -12,15 +12,16 @@
   <link rel="stylesheet" href="css/bootstrap/bootstrap.css" type="text/css">
 
   <!-- CSS-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
 
 </head>
 <body>
   <header>
-    <nav class="customnavbar navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="customnavbar navbar navbar-expand-sm navbar-dark bg-dark" id="mainNav">
       <a class="navbar-brand" href="#">CODE WIKI</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        Menu
       </button>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mr-auto">
@@ -44,11 +45,10 @@
           </li>
         </ul>
       </div>
-
     </nav>
     <div class="input-group search-box">
       <span class="input-group-btn left-search-btns">
-        <a class="imgshuffle btnsearch btn btn-outline-secondary" href="/random" role="button"></a>
+        <a class="imgshuffle btnsearch btn btn-outline-secondary" href="#" role="button"></a>
       </span>
       <input type="text" id="searchInput" class="form-control" placeholder="위키 검색" tabindex="1">
       <span>
@@ -60,12 +60,21 @@
     </div>
   </header>
 
-  <section>
-  </section>
+  <article class="container-flui wiki-article">
+    <div class="wiki-article-menu">
+      <div class="btn-group" role="group">
+        <a class="btn btn-outline-secondary" href="#" role="button">역링크</a>
+        <a class="btn btn-outline-secondary" href="#" role="button">토론</a>
+        <a class="btn btn-outline-secondary" rel="nofollow" href="#" role="button">편집</a>
+        <a class="btn btn-outline-secondary" href="#" role="button">역사</a>
+        <a class="btn btn-outline-secondary" href="#" role="button">ACL</a>
+      </div>
+    </div>
+  </article>
   <footer></footer>
 
   <!--JavaScript-->
-  <script src="/js/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="js/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
   <script src="js/bootstrap/bootstrap.bundle.js" type="text/javascript"></script>
   </body>
 </html>

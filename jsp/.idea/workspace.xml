@@ -2,23 +2,44 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="jsp:war exploded" />
+      <artifact name="jsp" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4594d1f2-cb3f-4d35-991f-9d848856e9e3" name="Default Changelist" comment="test">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/20133230.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/jsp_war_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/WEB-INF/server-config.wsdd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/bootstrap/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/css/main.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/images/icon/forward.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/images/icon/search.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/images/icon/shuffle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/js/bootstrap/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/js/bootstrap/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/js/bootstrap/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/js/bootstrap/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/js/bootstrap/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/js/bootstrap/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/js/bootstrap/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/js/bootstrap/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/js/jquery/jquery-3.3.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/js/jquery/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/jsp_war_exploded/js/jquery/jquery-3.3.1.slim.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/images/icon/forward.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/images/icon/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/images/icon/shuffle.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,17 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="289">
+              <caret line="50" column="73" selection-start-line="50" selection-start-column="73" selection-end-line="50" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -51,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/bootstrap/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="3325" column="19" selection-start-line="3325" selection-start-column="19" selection-end-line="3325" selection-end-column="19" />
+            <state relative-caret-position="2319">
+              <caret line="4160" column="7" selection-start-line="4160" selection-start-column="1" selection-end-line="4160" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -66,9 +78,11 @@
       <find>.navbar</find>
       <find>input-g</find>
       <find>right-bu</find>
+      <find>navbar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -100,9 +114,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="882" />
+    <option name="width" value="1045" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -111,7 +125,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,20 +174,21 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553690217305" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554224368013" />
+    <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -256,7 +271,7 @@
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <deployment>
-        <artifact name="jsp:war exploded">
+        <artifact name="jsp:war">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -353,7 +368,12 @@
       <workItem from="1553605788814" duration="416000" />
       <workItem from="1553674251675" duration="10729000" />
       <workItem from="1553691929961" duration="76000" />
-      <workItem from="1553745246855" duration="11203000" />
+      <workItem from="1553745246855" duration="12003000" />
+      <workItem from="1553797030586" duration="3609000" />
+      <workItem from="1554211831294" duration="1524000" />
+      <workItem from="1554213769710" duration="130000" />
+      <workItem from="1554213924407" duration="5000" />
+      <workItem from="1554213952661" duration="8816000" />
     </task>
     <task id="LOCAL-00001" summary="Add JSP Project">
       <created>1553602699541</created>
@@ -390,17 +410,33 @@
       <option name="project" value="LOCAL" />
       <updated>1553685359780</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="header 디자인 완료">
+      <created>1553772604855</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1553772604855</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25027000" />
+    <option name="totallyTimeSpent" value="39911000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="882" y="0" width="1045" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10554371" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21725889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -410,11 +446,11 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3274918" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3290993" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
@@ -440,7 +476,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add JSP Project" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="header 디자인 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="header 디자인 완료" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/bin/idea64.exe.vmoptions">
@@ -509,22 +546,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/bootstrap/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="3325" column="19" selection-start-line="3325" selection-start-column="19" selection-end-line="3325" selection-end-column="19" />
+        <state relative-caret-position="2319">
+          <caret line="4160" column="7" selection-start-line="4160" selection-start-column="1" selection-end-line="4160" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="428">
+          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="289">
+          <caret line="50" column="73" selection-start-line="50" selection-start-column="73" selection-end-line="50" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -534,7 +571,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>jsp:war exploded</last-edited>
+          <last-edited>jsp</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -570,7 +607,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -587,6 +624,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
