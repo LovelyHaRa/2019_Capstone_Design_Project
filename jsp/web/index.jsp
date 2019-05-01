@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/bootstrap/bootstrap.css" type="text/css">
 
   <!-- CSS-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Comfortaa|Noto+Sans+KR|Nanum+Gothic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
 
 </head>
