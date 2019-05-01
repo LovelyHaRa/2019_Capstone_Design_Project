@@ -18,14 +18,16 @@
     try {
         Class.forName("org.mariadb.jdbc.Driver");
         conn=DriverManager.getConnection("jdbc:mariadb://113.198.237.228:1521/code_wiki", "pi","!#deu1641");
-        sql="select name from user where user_id = ? and user_pw = ?";
+
+        sql="select user_name from user where user_id LIKE ? and user_pw LIKE ?";
         pstmt=conn.prepareStatement(sql);
         pstmt.setString(1,ID);
         pstmt.setString(2,pw);
         rs=pstmt.executeQuery();
         pstmt.close();
+
         if(rs.next()) {
-            name=rs.getString("name");
+            name=rs.getString("user_name");
             session.setAttribute("ID", ID);
             session.setAttribute("name", name);
         } else {

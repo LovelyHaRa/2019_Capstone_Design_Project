@@ -23,6 +23,17 @@ h3 p{
     text-align: center;
 }
 
+label.error {
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: left;
+    display: inherit;
+    color: #FF4000;
+    font-weight: bold;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
 .form-signin {
     width: 100%;
     max-width: 500px;
