@@ -46,7 +46,7 @@
         </div>
     </form>
 </div>
-<script src="../js/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="../js/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
 <script src="../js/jqValidate/jquery.validate.min.js" type="text/javascript"></script>
 <script src="../js/join.js" type="text/javascript"></script>
 </body>

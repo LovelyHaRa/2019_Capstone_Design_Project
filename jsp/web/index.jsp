@@ -90,7 +90,7 @@
   <footer></footer>
 
   <!--JavaScript-->
-  <script src="js/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="js/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
   <script src="js/bootstrap/bootstrap.bundle.js" type="text/javascript"></script>
   </body>
 </html>
