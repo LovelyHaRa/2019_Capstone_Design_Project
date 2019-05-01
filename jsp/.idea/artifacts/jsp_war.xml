@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="jsp:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/jsp_war</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="JAX-WS-Apache Axis" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="jsp/web/Web" />
+    </root>
+  </artifact>
+</component>

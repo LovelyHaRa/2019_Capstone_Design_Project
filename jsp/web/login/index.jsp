@@ -36,7 +36,7 @@
             <button class="btn btn-secondary btn-block" type="submit" id="btnLogin">로그인</button>
         </div>
         <div class="card-footer">
-            <p class="font-NG">아직 회원이 아니라면? <a href="#">회원가입</a></p>
+            <p class="font-NG">아직 회원이 아니라면? <a href="../join/index.jsp">회원가입</a></p>
             <p class="font-NG"><a href="#">ID/PW 찾기</a></p>
         </div>
     </form>

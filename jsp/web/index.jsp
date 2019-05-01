@@ -1,4 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%
+  String ID = (String)session.getAttribute("ID");
+  String name = (String)session.getAttribute("name");
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -41,7 +45,19 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Page</a>
+            <%
+              // 로그아웃 상태
+              if (ID == null) {
+            %>
+                <a class="nav-link" href="./login">My Page</a>
+            <%
+              // 로그인 상태
+              } else {
+            %>
+                <a class="nav-link" href="./user"><%= name %> My Page</a>
+            <%
+              }
+            %>
           </li>
         </ul>
       </div>
