@@ -13,7 +13,6 @@
     String sql="";
     String rst="success";
     String msg="";
-    int count=0;
 %>
 <%
     try {
