@@ -9,6 +9,7 @@
       <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.8.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/saaj.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/wsdl4j-1.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mariadb-java-client-2.4.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
