@@ -111,7 +111,7 @@
                     %>
                         CKEDITOR.instances.editor1.setData('<%=contentInSession%>');
                     <%
-                        session.setAttribute("contentInSession","");
+                        session.setAttribute("contentInSession", null);
                     }
                     %>
                 </script>
