@@ -6,7 +6,12 @@
     String ID = request.getParameter("ID");
     String pw = request.getParameter("pw");
     String codeID = request.getParameter("codeID");
-    boolean toEdit = (Boolean)session.getAttribute("toEdit");
+    boolean toEdit;
+    try {
+        toEdit = (Boolean) session.getAttribute("toEdit");
+    } catch (NullPointerException e) {
+        toEdit=false;
+    }
     String name="";
 
     Connection conn=null;
