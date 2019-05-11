@@ -5,6 +5,7 @@
     String userID = (String)session.getAttribute("ID");
     String contentText = request.getParameter("editor1");
     String codeID=request.getParameter("codeID");
+    String codeName=request.getParameter("codeName");
 
     Connection conn=null;
     PreparedStatement pstmt=null;
@@ -32,7 +33,7 @@
         Class.forName("org.mariadb.jdbc.Driver");
         conn=DriverManager.getConnection("jdbc:mariadb://113.198.237.228:1521/code_wiki", "pi","!#deu1641");
 
-        sql="select count(*) as docu_count from varcode_docu where varcode_num LIKE ? ";
+        sql="select count(*) as docu_count from varcode_docu where varcode_num LIKE ?";
         pstmt=conn.prepareStatement(sql);
         pstmt.setString(1, codeID);
         rs=pstmt.executeQuery();
@@ -45,12 +46,21 @@
             newDocument=false;
         revision_count++;
         if(newDocument) {
-            sql="insert into varcode values (?)";
+            sql="insert into varcode values (?, ?)";
             pstmt=conn.prepareStatement(sql);
             pstmt.setString(1, codeID);
+            pstmt.setString(2, codeName);
             pstmt.executeUpdate();
             pstmt.close();
 
+        }
+        if(!newDocument) {
+            sql="update varcode set varcode_name=? where varcode_num LIKE ?";
+            pstmt=conn.prepareStatement(sql);
+            pstmt.setString(1, codeName);
+            pstmt.setString(2, codeID);
+            pstmt.executeUpdate();
+            pstmt.close();
         }
         sql="insert into varcode_docu values (?, ?, ?, ?, now())";
         pstmt=conn.prepareStatement(sql);
@@ -69,8 +79,11 @@
         if(conn!=null)
             conn.close();
     }
-    if(rst.equals("success"))
+    if(rst.equals("success")) {
+        session.setAttribute("nameInSession", null);
+        session.setAttribute("contentInSession", null);
         response.sendRedirect("../wiki/?codeID="+codeID);
+    }
     else {
         out.println("<script>alert('등록 실패');history.back()</script>");
     }

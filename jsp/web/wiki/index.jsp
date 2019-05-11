@@ -5,6 +5,7 @@
   String ID = (String)session.getAttribute("ID");
   String name = (String)session.getAttribute("name");
   String contentText="위키내용을 찾을 수 없습니다.";
+  String nameText="";
   String codeID=request.getParameter("codeID");
 
   Connection conn=null;
@@ -62,12 +63,12 @@
               // 로그아웃 상태
               if (ID == null) {
             %>
-                <a class="nav-link" href="./login">My Page</a>
+                <a class="nav-link" href="../login">My Page</a>
             <%
               // 로그인 상태
               } else {
             %>
-                <a class="nav-link" href="./user"><%= name %> My Page</a>
+                <a class="nav-link" href="../user"><%= name %> My Page</a>
             <%
               }
             %>
@@ -114,6 +115,17 @@
           if (rs.next()) {
             revision_num = rs.getInt("docu_count");
           }
+
+          sql = "select varcode_name from varcode where varcode_num LIKE ?";
+          pstmt = conn.prepareStatement(sql);
+          pstmt.setString(1, codeID);
+          rs = pstmt.executeQuery();
+          pstmt.close();
+
+          if (rs.next()) {
+            nameText=rs.getString("varcode_name");
+          }
+
           sql = "select data from varcode_docu where varcode_num LIKE ? and revision_docu = "+revision_num;
           pstmt = conn.prepareStatement(sql);
           pstmt.setString(1, codeID);
@@ -135,6 +147,7 @@
       %>
       <%= contentText %>
       <form id="contentForm" action="../edit/?codeID=<%=codeID%>" method="post">
+        <input type="text" hidden id="nameText" name="nameText" value="<%=nameText%>">
         <input type="text" hidden id="contentText" name="contentText" value="<%=contentText%>">
       </form>
     </div>

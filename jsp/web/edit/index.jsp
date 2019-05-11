@@ -5,7 +5,9 @@
     String name = (String)session.getAttribute("name");
     String codeID=request.getParameter("codeID");
     String contentText=request.getParameter("contentText");
+    String nameText=request.getParameter("nameText");
     String contentInSession=(String)session.getAttribute("contentInSession");
+    String nameInSession=(String)session.getAttribute("nameInSession");
 %>
 <!DOCTYPE html>
 <html lang="ko">
@@ -23,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Comfortaa|Noto+Sans+KR|Nanum+Gothic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
     <link rel="stylesheet" href="../css/editor.css" type="text/css">
+    <link rel="stylesheet" href="../css/fontstyle.css" type="text/css">
     <script src="../ckeditor/ckeditor.js" type="text/javascript"></script>
 </head>
 <body>
@@ -83,10 +86,12 @@
 
 <article class="container-flui wiki-article">
     <%
-        if(ID==null) {
+        if(ID==null && codeID!=null) {
             session.setAttribute("toEdit",new Boolean(true));
-            if(contentText!=null)
-                session.setAttribute("contentInSession",contentText);
+            if(contentText!=null) {
+                session.setAttribute("contentInSession", contentText);
+                session.setAttribute("nameInSession", nameText);
+            }
             response.sendRedirect("../login/?codeID="+codeID);
         }
     %>
@@ -96,7 +101,26 @@
         </div>
         <div class="editor-section input-group">
             <form id="formEdit" method="post" action="edit.jsp" accept-charset="UTF-8">
+                <div class="inputCodeName">
+                    <p class="font-NG">코드 제목</p>
+                    <%
+                        if(nameText!=null) {
+                    %>
+                    <input type="text" id="codeName" name="codeName" class="form-control" placeholder="해당 물품 바코드 제목입력" value="<%=nameText%>" required>
+                    <%
+                        } else if(nameInSession!=null) {
+                    %>
+                    <input type="text" id="codeName" name="codeName" class="form-control" placeholder="해당 물품 바코드 제목입력" value="<%=nameInSession%>" required>
+                    <%
+                        } else {
+                    %>
+                    <input type="text" id="codeName" name="codeName" class="form-control" placeholder="해당 물품 바코드 제목입력" required>
+                    <%
+                        }
+                    %>
+                </div>
                 <input type="text" name="codeID" id="codeID" hidden value="<%= codeID %>">
+                <p class="font-NG">코드 내용</p>
                 <textarea name="editor1" id="editor1"></textarea>
                 <script type="text/javascript">
                     CKEDITOR.replace('editor1', {
@@ -111,7 +135,6 @@
                     %>
                         CKEDITOR.instances.editor1.setData('<%=contentInSession%>');
                     <%
-                        session.setAttribute("contentInSession", null);
                     }
                     %>
                 </script>
@@ -125,6 +148,8 @@
 <!--JavaScript-->
 <script src="../js/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
 <script src="../js/bootstrap/bootstrap.bundle.js" type="text/javascript"></script>
+<script src="../js/jqValidate/jquery.validate.min.js" type="text/javascript"></script>
 <script src="../js/edit.js" type="text/javascript"></script>
+<script src="../js/editFormCkeck.js" type="text/javascript"></script>
 </body>
 </html>
