@@ -69,6 +69,10 @@
     }
 
 }
+
+.wiki-content {
+    margin: 20px;
+}
 /*
 input, select, textarea, button, .btn {
     font-size: .9rem!important;

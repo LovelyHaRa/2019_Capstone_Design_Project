@@ -5,6 +5,8 @@
     request.setCharacterEncoding("UTF-8");
     String ID = request.getParameter("ID");
     String pw = request.getParameter("pw");
+    String codeID = request.getParameter("codeID");
+    boolean toEdit = (Boolean)session.getAttribute("toEdit");
     String name="";
 
     Connection conn=null;
@@ -13,6 +15,8 @@
     String sql="";
     String rst="success";
     String msg="";
+
+
 %>
 <%
     try {
@@ -45,8 +49,14 @@
     }
 %>
 <%
-    if(rst.equals("success"))
-        response.sendRedirect("../index.jsp");
+    if(rst.equals("success")) {
+        if (toEdit) {
+            session.setAttribute("toEdit",new Boolean(false));
+            response.sendRedirect("../edit/?codeID=" + codeID);
+        }
+        else
+            response.sendRedirect("../index.jsp");
+    }
     else {
         out.println("<script>alert('ID 또는 패스워드가 맞지 않습니다.');history.back()</script>");
     }

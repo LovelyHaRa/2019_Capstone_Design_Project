@@ -28,6 +28,10 @@
                 <label for="inputPassword" class="sr-only">PASSWORD</label>
                 <input type="password" id="inputPassword" name="pw" class="form-control" placeholder="PASSWORD" required>
             </div>
+            <%
+                String codeID=request.getParameter("codeID");
+            %>
+            <input type="text" name="codeID" id="codeID" hidden value="<%= codeID %>">
             <div class="checkbox mb-3">
                 <label>
                     <input type="checkbox" value="remember-me" class="check"> <span style="font-size: 0.9em;"> ID/PW 저장</span>
