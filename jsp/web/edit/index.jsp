@@ -45,7 +45,7 @@
                         특수 기능
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">게시판</a>
+                        <a class="dropdown-item" href="../board">게시판</a>
                         <a class="dropdown-item" href="#">편집된 지 오래된 문서</a>
                         <a class="dropdown-item" href="#">내용이 짧은 문서</a>
                         <a class="dropdown-item" href="#">내용이 긴 문서</a>
