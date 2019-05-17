@@ -6,14 +6,13 @@
   String name = (String)session.getAttribute("name");
   String contentText="위키내용을 찾을 수 없습니다.";
   String nameText="";
+  String dateText="";
   String codeID=request.getParameter("codeID");
 
   Connection conn=null;
   PreparedStatement pstmt=null;
   ResultSet rs=null;
   String sql="";
-  String rst="success";
-  String msg="";
 
   int revision_num = 0;
 %>
@@ -126,7 +125,7 @@
             nameText=rs.getString("varcode_name");
           }
 
-          sql = "select data from varcode_docu where varcode_num LIKE ? and revision_docu = "+revision_num;
+          sql = "select data, date from varcode_docu where varcode_num LIKE ? and revision_docu = "+revision_num;
           pstmt = conn.prepareStatement(sql);
           pstmt.setString(1, codeID);
           rs = pstmt.executeQuery();
@@ -134,10 +133,10 @@
 
           if (rs.next()) {
             contentText=rs.getString("data");
+            dateText=rs.getString("date");
           }
         } catch (SQLException e) {
-          rst = "DB 연동 오류";
-          msg = e.getMessage();
+          contentText = "위키 DB에 접속할 수 없습니다.";
         } finally {
           if (pstmt != null)
             pstmt.close();
@@ -145,7 +144,19 @@
             conn.close();
         }
       %>
+      <% if(revision_num==0) {
+        %>
       <%= contentText %>
+      <%
+      } else {
+        %>
+      <h2 class="h2"><%=nameText%></h2>
+      <p class="strDate" style="text-align: right;">마지막 수정일 : <%=dateText%></p>
+      <hr>
+      <%= contentText %>
+      <%
+      }
+      %>
       <form id="contentForm" action="../edit/?codeID=<%=codeID%>" method="post">
         <input type="text" hidden id="nameText" name="nameText" value="<%=nameText%>">
         <input type="text" hidden id="contentText" name="contentText" value="<%=contentText%>">

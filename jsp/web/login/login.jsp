@@ -1,4 +1,3 @@
-<%@page import="java.net.URLEncoder"%>
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
@@ -7,10 +6,16 @@
     String pw = request.getParameter("pw");
     String codeID = request.getParameter("codeID");
     boolean toEdit;
+    boolean toWrite;
     try {
         toEdit = (Boolean) session.getAttribute("toEdit");
     } catch (NullPointerException e) {
         toEdit=false;
+    }
+    try {
+        toWrite = (Boolean) session.getAttribute("toWrite");
+    } catch (NullPointerException e) {
+        toWrite=false;
     }
     String name="";
 
@@ -58,6 +63,9 @@
         if (toEdit) {
             session.setAttribute("toEdit",new Boolean(false));
             response.sendRedirect("../edit/?codeID=" + codeID);
+        } else if(toWrite) {
+            session.setAttribute("toWrite",new Boolean(false));
+            response.sendRedirect("../board/write");
         }
         else
             response.sendRedirect("../index.jsp");

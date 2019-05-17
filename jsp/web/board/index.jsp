@@ -1,13 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@page import="java.sql.*"%>
 <%
-    request.setCharacterEncoding("UTF-8");
     String ID = (String)session.getAttribute("ID");
     String name = (String)session.getAttribute("name");
-    String codeID=request.getParameter("codeID");
-    String contentText=request.getParameter("contentText");
-    String nameText=request.getParameter("nameText");
-    String contentInSession=(String)session.getAttribute("contentInSession");
-    String nameInSession=(String)session.getAttribute("nameInSession");
+
+    Connection conn=null;
+    PreparedStatement pstmt=null;
+    ResultSet rs=null;
+    String sql="";
+    String rst="success";
+    String msg="";
+
+    int total=0;
 %>
 <!DOCTYPE html>
 <html lang="ko">
@@ -24,9 +28,8 @@
     <!-- CSS-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Comfortaa|Noto+Sans+KR|Nanum+Gothic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <link rel="stylesheet" href="../css/editor.css" type="text/css">
-    <link rel="stylesheet" href="../css/fontstyle.css" type="text/css">
-    <script src="../ckeditor/ckeditor.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/board.css" type="text/css">
+
 </head>
 <body>
 <header>
@@ -60,7 +63,7 @@
                     <a class="nav-link" href="../login">My Page</a>
                     <%
                         // 로그인 상태
-                        } else {
+                    } else {
                     %>
                     <a class="nav-link" href="../user"><%= name %> My Page</a>
                     <%
@@ -84,75 +87,86 @@
     </div>
 </header>
 
-<article class="container-flui wiki-article">
-    <%
-        if(ID==null && codeID!=null) {
-            session.setAttribute("toEdit",new Boolean(true));
-            if(contentText!=null) {
-                session.setAttribute("contentInSession", contentText);
-                session.setAttribute("nameInSession", nameText);
-            }
-            response.sendRedirect("../login/?codeID="+codeID);
-        }
-    %>
-    <div class="wiki-editor">
-        <div class="editor-header">
-            <h3 class="h3"><%= codeID %> 문서 작성/편집</h3>
-        </div>
-        <div class="editor-section input-group">
-            <form id="formEdit" method="post" action="edit.jsp" accept-charset="UTF-8">
-                <div class="inputCodeName">
-                    <p class="font-NG">코드 제목</p>
-                    <%
-                        if(nameText!=null) {
-                    %>
-                    <input type="text" id="codeName" name="codeName" class="form-control" placeholder="해당 물품 바코드 제목입력" value="<%=nameText%>" required>
-                    <%
-                        } else if(nameInSession!=null) {
-                    %>
-                    <input type="text" id="codeName" name="codeName" class="form-control" placeholder="해당 물품 바코드 제목입력" value="<%=nameInSession%>" required>
-                    <%
-                        } else {
-                    %>
-                    <input type="text" id="codeName" name="codeName" class="form-control" placeholder="해당 물품 바코드 제목입력" required>
-                    <%
-                        }
-                    %>
-                </div>
-                <input type="text" name="codeID" id="codeID" hidden value="<%= codeID %>">
-                <p class="font-NG">코드 내용</p>
-                <textarea name="editor1" id="editor1"></textarea>
-                <script type="text/javascript">
-                    CKEDITOR.replace('editor1', {
-                        height: 250,
-                        filebrowserImageUploadUrl: '/ckeditor/upload.jsp?'
-                        +'realUrl=http://localhost:8080/wiki/image'
-                        +'&realDir=${pageContext.request.contextPath}/wiki/image'
-                    });
-                    <%
-                    if(contentText!=null) {
-                    %>
-                        CKEDITOR.instances.editor1.setData('<%=contentText%>');
-                    <%
-                    } else if(contentInSession!=null) {
-                    %>
-                        CKEDITOR.instances.editor1.setData('<%=contentInSession%>');
-                    <%
+<section>
+    <table class="boardList table table-hover table-striped text-center">
+        <thead class="thead-dark">
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>날짜</th>
+            <th>조회수</th>
+        </tr>
+        </thead>
+        <tbody>
+        <%
+            try {
+                Class.forName("org.mariadb.jdbc.Driver");
+                conn=DriverManager.getConnection("jdbc:mariadb://113.198.237.228:1521/code_wiki", "pi","!#deu1641");
+
+                sql="select count(*) from board";
+                pstmt=conn.prepareStatement(sql);
+                rs=pstmt.executeQuery();
+                pstmt.close();
+
+                if(rs.next()) {
+                    total=rs.getInt(1);
+                }
+                rs.close();
+
+                sql="select number, username, title, date_format(datetime, \"%Y-%m-%d\"), hit from board order by number desc";
+                pstmt=conn.prepareStatement(sql);
+                rs=pstmt.executeQuery();
+                pstmt.close();
+        %>
+        <%
+                if(total==0) {
+        %>
+        <tr align="center">
+            <td colspan="5">등록된 글이 없습니다.</td>
+        </tr>
+        <%
+                } else {
+                    while(rs.next()) {
+                        int number=rs.getInt(1);
+                        String username=rs.getString(2);
+                        String title=rs.getString(3);
+                        String datetime=rs.getString(4);
+                        int hit=rs.getInt(5);
+                        %>
+        <tr onclick="location.href='./view/?contentNumber=<%=number%>'">
+            <td><%=number%></td>
+            <td><%=title%></td>
+            <td><%=username%></td>
+            <td><%=datetime%></td>
+            <td><%=hit%></td>
+        </tr>
+        <%
                     }
-                    %>
-                </script>
-                <input type="submit" class="btn btn-secondary btn-block" id="btnSubmit" value="저장하기">
-            </form>
-        </div>
+                }
+
+            } catch(SQLException e) {
+                rst="DB 연동 오류";
+                msg=e.getMessage();
+            } finally {
+                if(pstmt!=null)
+                    pstmt.close();
+                if(conn!=null)
+                    conn.close();
+            }
+        %>
+
+        </tbody>
+    </table>
+    <div class="writeAction">
+        <button class="btnWrite btn btn-secondary">글쓰기</button>
     </div>
-</article>
+</section>
 <footer></footer>
 
 <!--JavaScript-->
 <script src="../js/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
 <script src="../js/bootstrap/bootstrap.bundle.js" type="text/javascript"></script>
-<script src="../js/jqValidate/jquery.validate.min.js" type="text/javascript"></script>
-<script src="../js/edit.js" type="text/javascript"></script>
-<script src="../js/editFormCkeck.js" type="text/javascript"></script>
+<script src="../js/board.js" type="text/javascript"></script>
 </body>
 </html>
