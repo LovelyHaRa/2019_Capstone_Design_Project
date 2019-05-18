@@ -11,7 +11,17 @@
     String rst="success";
     String msg="";
 
-    int total=0;
+    // 페이징 처리 변수 (http://blog.naver.com/PostView.nhn?blogId=nscorpio16&logNo=60103052346)
+    int pageSize = 10;
+    int pageBlock = 5;
+    int cpage = request.getParameter("pageNum") != null ? Integer.parseInt(request.getParameter("pageNum")) : 1;
+    int total = 0;
+    int EndNo = pageSize * cpage;
+    int StartNo = EndNo - pageSize;
+    int totalPage = 0;
+
+    int prevBlock = (int)Math.floor((cpage - 1) / pageBlock) * pageBlock;
+    int nextBlock = prevBlock + pageBlock + 1;
 %>
 <!DOCTYPE html>
 <html lang="ko">
@@ -113,9 +123,19 @@
                     total=rs.getInt(1);
                 }
                 rs.close();
-
-                sql="select number, username, title, date_format(datetime, \"%Y-%m-%d\"), hit from board order by number desc";
+                sql="SET @rownum:=0";
                 pstmt=conn.prepareStatement(sql);
+                pstmt.execute();
+                pstmt.close();
+
+                sql="select * from " +
+                        "(select @rownum:=@rownum+1 as rownumber, username, title, datetime, hit " +
+                        "from board where @rownum:=0=0) A " +
+                        "where rownumber>? and rownumber<=? " +
+                        "order by rownumber desc";
+                pstmt=conn.prepareStatement(sql);
+                pstmt.setInt(1, StartNo);
+                pstmt.setInt(2, EndNo);
                 rs=pstmt.executeQuery();
                 pstmt.close();
         %>
@@ -158,6 +178,48 @@
 
         </tbody>
     </table>
+    <!-- 페이징 처리 -->
+    <nav class="NavPage">
+        <ul class="pagination pagination-sm justify-content-center">
+            <%
+                totalPage = ((total - 1) / pageSize) + 1;
+                int prevPage = (int)Math.floor((cpage - 1) / pageBlock) * pageBlock;
+                int nextPage = prevPage + pageBlock + 1;
+            %>
+            <%
+                if(prevBlock > 0) { %>
+                <li class="page-item disabled ">
+                    <a class="page-link" href="./?pageNum=<%=prevBlock%>" tabindex="-1" aria-disabled="true">이전</a>
+                </li>
+            <%
+                }
+            %>
+            <%
+                for(int i=1+prevBlock; i< nextBlock && i<=totalPage; i++) {
+                    if(i==cpage) {
+            %>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#"><%=i%> <span class="sr-only">(current)</span></a>
+                </li>
+            <%
+                    } else {
+            %>
+                    <li class="page-item"><a class="page-link" href="./?pageNum=<%=i%>"><%=i%></a></li>
+            <%
+                    }
+                }
+            %>
+            <%
+                if (totalPage >= nextPage) {
+            %>
+                <li class="page-item">
+                    <a class="page-link" href="./?pageNum=<%=nextPage%>">다음</a>
+                </li>
+            <%
+                }
+            %>
+        </ul>
+    </nav>
     <div class="writeAction">
         <button class="btnWrite btn btn-secondary">글쓰기</button>
     </div>
