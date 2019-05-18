@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <%@page import="java.sql.*"%>
 <%
+    request.setCharacterEncoding("UTF-8");
     String ID = (String)session.getAttribute("ID");
     String name = (String)session.getAttribute("name");
 
@@ -11,17 +12,8 @@
     String rst="success";
     String msg="";
 
-    // 페이징 처리 변수 (http://blog.naver.com/PostView.nhn?blogId=nscorpio16&logNo=60103052346)
-    int pageSize = 10;
-    int pageBlock = 5;
-    int cpage = request.getParameter("pageNum") != null ? Integer.parseInt(request.getParameter("pageNum")) : 1;
-    int total = 0;
-    int endNo = pageSize * cpage;
-    int startNo = endNo - pageSize;
-    int totalPage = 0;
+    int shortText = request.getParameter("shortText") != null ? Integer.parseInt(request.getParameter("shortText")) : 1;
 
-    int prevBlock = (int)Math.floor((cpage - 1) / pageBlock) * pageBlock;
-    int nextBlock = prevBlock + pageBlock + 1;
 %>
 <!DOCTYPE html>
 <html lang="ko">
@@ -38,7 +30,7 @@
     <!-- CSS-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Comfortaa|Noto+Sans+KR|Nanum+Gothic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <link rel="stylesheet" href="../css/board.css" type="text/css">
+    <link rel="stylesheet" href="../css/list.css" type="text/css">
 
 </head>
 <body>
@@ -58,10 +50,10 @@
                         특수 기능
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./">게시판</a>
+                        <a class="dropdown-item" href="../board">게시판</a>
                         <a class="dropdown-item" href="../lately">편집된 지 오래된 문서</a>
-                        <a class="dropdown-item" href="../contentlist">내용이 짧은 문서</a>
-                        <a class="dropdown-item" href="../contentlist/?shortText=0">내용이 긴 문서</a>
+                        <a class="dropdown-item" href="./">내용이 짧은 문서</a>
+                        <a class="dropdown-item" href="./?shortText=0">내용이 긴 문서</a>
                         <a class="dropdown-item" href="../search/suffle.jsp">무작위 문서</a>
                     </div>
                 </li>
@@ -98,14 +90,26 @@
 </header>
 
 <section>
-    <table class="boardList table table-hover table-striped text-center">
+    <div class="listTitle">
+        <%
+            if(shortText==1) {
+        %>
+                <h5 class="h5">위키 문서 목록 : 내용이 짧은 문서</h5>
+        <%
+            } else {
+        %>
+                <h5 class="h5">위키 문서 목록 : 내용이 긴 문서</h5>
+        <%
+            }
+        %>
+    </div>
+    <table class="wikiList table table-hover table-striped text-center">
         <thead class="thead-dark">
         <tr>
-            <th>번호</th>
+            <th>코드</th>
             <th>제목</th>
             <th>작성자</th>
             <th>날짜</th>
-            <th>조회수</th>
         </tr>
         </thead>
         <tbody>
@@ -114,59 +118,34 @@
                 Class.forName("org.mariadb.jdbc.Driver");
                 conn=DriverManager.getConnection("jdbc:mariadb://113.198.237.228:1521/code_wiki", "pi","!#deu1641");
 
-                sql="select count(*) from board";
-                pstmt=conn.prepareStatement(sql);
-                rs=pstmt.executeQuery();
-                pstmt.close();
-
-                if(rs.next()) {
-                    total=rs.getInt(1);
-                }
-                rs.close();
-
-                sql="SET @rownum:=0";
-                pstmt=conn.prepareStatement(sql);
-                pstmt.execute();
-                pstmt.close();
+                String sorting=(shortText==1)?"asc":"desc";
 
                 sql="select * from " +
-                        "(select @rownum:=@rownum-1 as rownumber, number, username, title, datetime, hit " +
-                        "from board where (@rownum:=?)=?) A where rownumber>? and rownumber<=? " +
-                        "order by rownumber asc";
+                        "(select varcode.varcode_num, varcode_name, varcode_docu.user_id, " +
+                        "date, revision_docu, CHAR_LENGTH(data) as contentlength " +
+                        "from varcode inner join varcode_docu on varcode.varcode_num=varcode_docu.varcode_num " +
+                        "where lately_revision=revision_docu) A " +
+                        "order by contentlength "+sorting;
                 pstmt=conn.prepareStatement(sql);
-                pstmt.setInt(1, total+1);
-                pstmt.setInt(2, total+1);
-                pstmt.setInt(3, startNo);
-                pstmt.setInt(4, endNo);
                 rs=pstmt.executeQuery();
                 pstmt.close();
         %>
         <%
-                if(total==0) {
+            while(rs.next()) {
+                String codeID=rs.getString(1);
+                String codeName=rs.getString(2);
+                String title=rs.getString(3);
+                String datetime=rs.getString(4);
         %>
-        <tr align="center">
-            <td colspan="5">등록된 글이 없습니다.</td>
-        </tr>
-        <%
-                } else {
-                    while(rs.next()) {
-                        int number=rs.getInt(2);
-                        String username=rs.getString(3);
-                        String title=rs.getString(4);
-                        String datetime=rs.getString(5);
-                        int hit=rs.getInt(6);
-                        %>
-        <tr onclick="location.href='./view/?contentNumber=<%=number%>'">
-            <td><%=number%></td>
+        <tr onclick="location.href='../wiki/?codeID=<%=codeID%>'">
+            <td><%=codeID%></td>
+            <td><%=codeName%></td>
             <td><%=title%></td>
-            <td><%=username%></td>
             <td><%=datetime%></td>
-            <td><%=hit%></td>
         </tr>
         <%
-                    }
                 }
-
+                rs.close();
             } catch(SQLException e) {
                 rst="DB 연동 오류";
                 msg=e.getMessage();
@@ -180,51 +159,6 @@
 
         </tbody>
     </table>
-    <!-- 페이징 처리 -->
-    <nav class="NavPage">
-        <ul class="pagination pagination-sm justify-content-center">
-            <%
-                totalPage = ((total - 1) / pageSize) + 1;
-                int prevPage = (int)Math.floor((cpage - 1) / pageBlock) * pageBlock;
-                int nextPage = prevPage + pageBlock + 1;
-            %>
-            <%
-                if(prevBlock > 0) { %>
-                <li class="page-item disabled ">
-                    <a class="page-link" href="./?pageNum=<%=prevBlock%>" tabindex="-1" aria-disabled="true">이전</a>
-                </li>
-            <%
-                }
-            %>
-            <%
-                for(int i=1+prevBlock; i< nextBlock && i<=totalPage; i++) {
-                    if(i==cpage) {
-            %>
-                <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#"><%=i%> <span class="sr-only">(current)</span></a>
-                </li>
-            <%
-                    } else {
-            %>
-                    <li class="page-item"><a class="page-link" href="./?pageNum=<%=i%>"><%=i%></a></li>
-            <%
-                    }
-                }
-            %>
-            <%
-                if (totalPage >= nextPage) {
-            %>
-                <li class="page-item">
-                    <a class="page-link" href="./?pageNum=<%=nextPage%>">다음</a>
-                </li>
-            <%
-                }
-            %>
-        </ul>
-    </nav>
-    <div class="writeAction">
-        <button class="btnWrite btn btn-secondary">글쓰기</button>
-    </div>
 </section>
 <footer></footer>
 

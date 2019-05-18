@@ -38,10 +38,10 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="./board">게시판</a>
-              <a class="dropdown-item" href="#">편집된 지 오래된 문서</a>
-              <a class="dropdown-item" href="#">내용이 짧은 문서</a>
-              <a class="dropdown-item" href="#">내용이 긴 문서</a>
-             <a class="dropdown-item" href="#">무작위 문서</a>
+              <a class="dropdown-item" href="./lately">편집된 지 오래된 문서</a>
+              <a class="dropdown-item" href="./contentlist">내용이 짧은 문서</a>
+              <a class="dropdown-item" href="./contentlist/?shortText=0">내용이 긴 문서</a>
+             <a class="dropdown-item" href="./search/suffle.jsp">무작위 문서</a>
             </div>
           </li>
           <li class="nav-item">
@@ -64,7 +64,7 @@
     </nav>
     <div class="input-group search-box">
       <span class="input-group-btn left-search-btns">
-        <a class="imgshuffle btnsearch btn btn-outline-secondary" href="#" role="button"></a>
+        <a class="imgshuffle btnsearch btn btn-outline-secondary" href="./search/suffle.jsp" role="button"></a>
       </span>
       <input type="text" id="searchInput" class="form-control" placeholder="위키 검색" tabindex="1">
       <span>

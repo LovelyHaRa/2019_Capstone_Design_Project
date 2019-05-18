@@ -1,7 +1,19 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@page import="java.sql.*"%>
 <%
+    request.setCharacterEncoding("UTF-8");
     String ID = (String)session.getAttribute("ID");
     String name = (String)session.getAttribute("name");
+
+    Connection conn=null;
+    PreparedStatement pstmt=null;
+    ResultSet rs=null;
+    String sql="";
+    String rst="success";
+    String msg="";
+
+    String query=request.getParameter("query");
+
 %>
 <!DOCTYPE html>
 <html lang="ko">
@@ -18,7 +30,7 @@
     <!-- CSS-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Comfortaa|Noto+Sans+KR|Nanum+Gothic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <link rel="stylesheet" href="../css/user.css" type="text/css">
+    <link rel="stylesheet" href="../css/list.css" type="text/css">
 
 </head>
 <body>
@@ -50,12 +62,12 @@
                         // 로그아웃 상태
                         if (ID == null) {
                     %>
-                    <a class="nav-link" href="#">My Page</a>
+                    <a class="nav-link" href="../login">My Page</a>
                     <%
                         // 로그인 상태
                     } else {
                     %>
-                    <a class="nav-link" href="#"><%= name %> My Page</a>
+                    <a class="nav-link" href="../user"><%= name %> My Page</a>
                     <%
                         }
                     %>
@@ -77,20 +89,69 @@
     </div>
 </header>
 
-<article class="container-flui wiki-article">
-    <div class="mypage-context">
-        <p>ID : <%= ID %></p>
-        <p>사용자 이름 : <%= name %></p>
-        <p style="text-align: center">
-            <a class="btn btn-secondary btn-block" href="../login/logout.jsp">로그아웃</a>
-        </p>
+<section>
+    <div class="listTitle">
+        <h5 class="h5">검색결과</h5>
     </div>
-</article>
+    <table class="wikiList table table-hover table-striped text-center">
+        <thead class="thead-dark">
+        <tr>
+            <th>코드</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>날짜</th>
+        </tr>
+        </thead>
+        <tbody>
+        <%
+            try {
+                Class.forName("org.mariadb.jdbc.Driver");
+                conn=DriverManager.getConnection("jdbc:mariadb://113.198.237.228:1521/code_wiki", "pi","!#deu1641");
+
+                sql="select varcode.varcode_num, varcode_name, varcode_docu.user_id, date, revision_docu " +
+                        "from varcode inner join varcode_docu on varcode.varcode_num=varcode_docu.varcode_num " +
+                        "where lately_revision=revision_docu " +
+                        "and (varcode.varcode_num LIKE '%"+query+"%' or varcode_name LIKE '%"+query+"%')";
+                pstmt=conn.prepareStatement(sql);
+                rs=pstmt.executeQuery();
+                pstmt.close();
+        %>
+        <%
+            while(rs.next()) {
+                String codeID=rs.getString(1);
+                String codeName=rs.getString(2);
+                String title=rs.getString(3);
+                String datetime=rs.getString(4);
+        %>
+        <tr onclick="location.href='../wiki/?codeID=<%=codeID%>'">
+            <td><%=codeID%></td>
+            <td><%=codeName%></td>
+            <td><%=title%></td>
+            <td><%=datetime%></td>
+        </tr>
+        <%
+                }
+                rs.close();
+            } catch(SQLException e) {
+                rst="DB 연동 오류";
+                msg=e.getMessage();
+            } finally {
+                if(pstmt!=null)
+                    pstmt.close();
+                if(conn!=null)
+                    conn.close();
+            }
+        %>
+
+        </tbody>
+    </table>
+</section>
 <footer></footer>
 
 <!--JavaScript-->
 <script src="../js/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
 <script src="../js/bootstrap/bootstrap.bundle.js" type="text/javascript"></script>
+<script src="../js/board.js" type="text/javascript"></script>
 <script src="../js/search.js" type="text/javascript"></script>
 </body>
 </html>

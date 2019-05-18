@@ -4,15 +4,15 @@
   request.setCharacterEncoding("UTF-8");
   String ID = (String)session.getAttribute("ID");
   String name = (String)session.getAttribute("name");
-  String contentText="위키내용을 찾을 수 없습니다.";
+  String contentText="코드에 대한 위키내용을 찾을 수 없습니다.";
   String nameText="";
   String dateText="";
   String codeID=request.getParameter("codeID");
 
   Connection conn=null;
   PreparedStatement pstmt=null;
-  ResultSet rs=null;
-  String sql="";
+  ResultSet rs;
+  String sql;
 
   int revision_num = 0;
 %>
@@ -51,10 +51,10 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="../board">게시판</a>
-              <a class="dropdown-item" href="#">편집된 지 오래된 문서</a>
-              <a class="dropdown-item" href="#">내용이 짧은 문서</a>
-              <a class="dropdown-item" href="#">내용이 긴 문서</a>
-             <a class="dropdown-item" href="#">무작위 문서</a>
+              <a class="dropdown-item" href="../lately">편집된 지 오래된 문서</a>
+              <a class="dropdown-item" href="../contentlist">내용이 짧은 문서</a>
+              <a class="dropdown-item" href="../contentlist/?shortText=0">내용이 긴 문서</a>
+             <a class="dropdown-item" href="../search/suffle.jsp">무작위 문서</a>
             </div>
           </li>
           <li class="nav-item">
@@ -77,7 +77,7 @@
     </nav>
     <div class="input-group search-box">
       <span class="input-group-btn left-search-btns">
-        <a class="imgshuffle btnsearch btn btn-outline-secondary" href="#" role="button"></a>
+        <a class="imgshuffle btnsearch btn btn-outline-secondary" href="../search/suffle.jsp" role="button"></a>
       </span>
       <input type="text" id="searchInput" class="form-control" placeholder="위키 검색" tabindex="1">
       <span>
@@ -90,63 +90,77 @@
   </header>
 
   <article class="container-flui wiki-article">
+    <%
+      try {
+        Class.forName("org.mariadb.jdbc.Driver");
+        conn = DriverManager.getConnection("jdbc:mariadb://113.198.237.228:1521/code_wiki", "pi", "!#deu1641");
+
+        sql = "select count(*) as docu_count from varcode_docu where varcode_num LIKE ? ";
+        pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1, codeID);
+        rs = pstmt.executeQuery();
+        pstmt.close();
+
+        if (rs.next()) {
+          if(request.getParameter("revision")!=null) {
+            revision_num=Integer.parseInt(request.getParameter("revision"));
+          } else
+            revision_num = rs.getInt("docu_count");
+        }
+
+        sql = "select varcode_name from varcode where varcode_num LIKE ?";
+        pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1, codeID);
+        rs = pstmt.executeQuery();
+        pstmt.close();
+
+        if (rs.next()) {
+          nameText=rs.getString("varcode_name");
+        }
+
+        sql = "select data, date from varcode_docu where varcode_num LIKE ? and revision_docu = "+revision_num;
+        pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1, codeID);
+        rs = pstmt.executeQuery();
+        pstmt.close();
+
+        if (rs.next()) {
+          contentText=rs.getString("data");
+          dateText=rs.getString("date");
+        }
+      } catch (SQLException e) {
+        contentText = "위키 DB에 접속할 수 없습니다.";
+      } finally {
+        if (pstmt != null)
+          pstmt.close();
+        if (conn != null)
+          conn.close();
+      }
+    %>
+    <%
+      if(revision_num>0) {
+    %>
     <div class="wiki-article-menu">
       <div class="btn-group" role="group">
+        <!--
         <a class="btn btn-outline-secondary" href="#" role="button">역링크</a>
         <a class="btn btn-outline-secondary" href="#" role="button">토론</a>
+        -->
         <a class="btn btn-outline-secondary" rel="nofollow" href="#" role="button" id="btnEdit">편집</a>
-        <a class="btn btn-outline-secondary" href="#" role="button">역사</a>
+        <a class="btn btn-outline-secondary" href="./history/?codeID=<%=codeID%>" role="button">역사</a>
+        <!--
         <a class="btn btn-outline-secondary" href="#" role="button">ACL</a>
+        -->
       </div>
     </div>
+    <%
+      }
+    %>
     <div class="wiki-content">
-      <%
-        try {
-          Class.forName("org.mariadb.jdbc.Driver");
-          conn = DriverManager.getConnection("jdbc:mariadb://113.198.237.228:1521/code_wiki", "pi", "!#deu1641");
-
-          sql = "select count(*) as docu_count from varcode_docu where varcode_num LIKE ? ";
-          pstmt = conn.prepareStatement(sql);
-          pstmt.setString(1, codeID);
-          rs = pstmt.executeQuery();
-          pstmt.close();
-
-          if (rs.next()) {
-            revision_num = rs.getInt("docu_count");
-          }
-
-          sql = "select varcode_name from varcode where varcode_num LIKE ?";
-          pstmt = conn.prepareStatement(sql);
-          pstmt.setString(1, codeID);
-          rs = pstmt.executeQuery();
-          pstmt.close();
-
-          if (rs.next()) {
-            nameText=rs.getString("varcode_name");
-          }
-
-          sql = "select data, date from varcode_docu where varcode_num LIKE ? and revision_docu = "+revision_num;
-          pstmt = conn.prepareStatement(sql);
-          pstmt.setString(1, codeID);
-          rs = pstmt.executeQuery();
-          pstmt.close();
-
-          if (rs.next()) {
-            contentText=rs.getString("data");
-            dateText=rs.getString("date");
-          }
-        } catch (SQLException e) {
-          contentText = "위키 DB에 접속할 수 없습니다.";
-        } finally {
-          if (pstmt != null)
-            pstmt.close();
-          if (conn != null)
-            conn.close();
-        }
-      %>
       <% if(revision_num==0) {
         %>
-      <%= contentText %>
+      <p><%= contentText %></p>
+      <input type="button" class="btn btn-secondary" value="위키 문서 등록" onclick="location.href='../edit/?codeID=<%=codeID%>'">
       <%
       } else {
         %>
@@ -169,5 +183,6 @@
   <script src="../js/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
   <script src="../js/bootstrap/bootstrap.bundle.js" type="text/javascript"></script>
   <script src="../js/edit.js" type="text/javascript"></script>
+  <script src="../js/search.js" type="text/javascript"></script>
   </body>
 </html>

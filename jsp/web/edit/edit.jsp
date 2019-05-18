@@ -46,7 +46,7 @@
             newDocument=false;
         revision_count++;
         if(newDocument) {
-            sql="insert into varcode values (?, ?)";
+            sql="insert into varcode(varcode_num, varcode_name) values (?, ?)";
             pstmt=conn.prepareStatement(sql);
             pstmt.setString(1, codeID);
             pstmt.setString(2, codeName);
@@ -55,10 +55,11 @@
 
         }
         if(!newDocument) {
-            sql="update varcode set varcode_name=? where varcode_num LIKE ?";
+            sql="update varcode set varcode_name=?, lately_revision=? where varcode_num LIKE ?";
             pstmt=conn.prepareStatement(sql);
             pstmt.setString(1, codeName);
-            pstmt.setString(2, codeID);
+            pstmt.setInt(2, revision_count);
+            pstmt.setString(3, codeID);
             pstmt.executeUpdate();
             pstmt.close();
         }

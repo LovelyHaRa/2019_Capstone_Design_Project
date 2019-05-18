@@ -54,10 +54,10 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="../">게시판</a>
-                        <a class="dropdown-item" href="#">편집된 지 오래된 문서</a>
-                        <a class="dropdown-item" href="#">내용이 짧은 문서</a>
-                        <a class="dropdown-item" href="#">내용이 긴 문서</a>
-                        <a class="dropdown-item" href="#">무작위 문서</a>
+                        <a class="dropdown-item" href="../../lately">편집된 지 오래된 문서</a>
+                        <a class="dropdown-item" href="../../contentlist">내용이 짧은 문서</a>
+                        <a class="dropdown-item" href="../../contentlist/?shortText=0">내용이 긴 문서</a>
+                        <a class="dropdown-item" href="../../search/suffle.jsp">무작위 문서</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -80,14 +80,14 @@
     </nav>
     <div class="input-group search-box">
       <span class="input-group-btn left-search-btns">
-        <a class="imgshuffle btnsearch btn btn-outline-secondary" href="#" role="button"></a>
+        <a class="imgshuffle btnsearch btn btn-outline-secondary" href="../../search/suffle.jsp" role="button"></a>
       </span>
         <input type="text" id="searchInput" class="form-control" placeholder="위키 검색" tabindex="1">
         <span>
-        <button id="searchBtn" class="imgsearch btnsearch btn btn-outline-secondary" type="button"></button>
+        <button id="searchBtn2" class="imgsearch btnsearch btn btn-outline-secondary" type="button"></button>
       </span>
         <span>
-        <button id="goBtn" class="imggo btnsearch btn btn-outline-secondary" type="button"></button>
+        <button id="goBtn2" class="imggo btnsearch btn btn-outline-secondary" type="button"></button>
       </span>
     </div>
 </header>
@@ -125,5 +125,6 @@
 <!--JavaScript-->
 <script src="../../js/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
 <script src="../../js/bootstrap/bootstrap.bundle.js" type="text/javascript"></script>
+<script src="../../js/search.js" type="text/javascript"></script>
 </body>
 </html>

@@ -1053,93 +1053,100 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="261" parent="242" name="PRIMARY">
+    <column id="261" parent="242" name="lately_revision">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>1</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="262" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>varcode_num</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="262" parent="243" name="user_id">
+    <column id="263" parent="243" name="user_id">
       <Position>1</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="243" name="varcode_num">
+    <column id="264" parent="243" name="varcode_num">
       <Position>2</Position>
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="243" name="revision_docu">
+    <column id="265" parent="243" name="revision_docu">
       <Position>3</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="243" name="data">
+    <column id="266" parent="243" name="data">
       <Position>4</Position>
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="243" name="date">
+    <column id="267" parent="243" name="date">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="267" parent="243" name="user_id">
+    <index id="268" parent="243" name="user_id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="268" parent="243" name="PRIMARY">
+    <key id="269" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>varcode_num
 revision_docu</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="269" parent="243" name="varcode_docu_ibfk_2">
+    <foreign-key id="270" parent="243" name="varcode_docu_ibfk_2">
       <ColNames>varcode_num</ColNames>
       <RefSchemaName>code_wiki</RefSchemaName>
       <RefTableName>varcode</RefTableName>
       <RefColNames>varcode_num</RefColNames>
     </foreign-key>
-    <column id="270" parent="244" name="varcode_num">
+    <column id="271" parent="244" name="varcode_num">
       <Position>1</Position>
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="244" name="revision_pic">
+    <column id="272" parent="244" name="revision_pic">
       <Position>2</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="244" name="pic">
+    <column id="273" parent="244" name="pic">
       <Position>3</Position>
       <DataType>blob|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="244" name="date">
+    <column id="274" parent="244" name="date">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="274" parent="244" name="editor">
+    <column id="275" parent="244" name="editor">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="275" parent="244" name="PRIMARY">
+    <key id="276" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>varcode_num
 revision_pic</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="276" parent="244" name="varcode_pic_ibfk_1">
+    <foreign-key id="277" parent="244" name="varcode_pic_ibfk_1">
       <ColNames>varcode_num</ColNames>
       <RefSchemaName>code_wiki</RefSchemaName>
       <RefTableName>varcode</RefTableName>
