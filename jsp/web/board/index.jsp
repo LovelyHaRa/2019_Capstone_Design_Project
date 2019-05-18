@@ -130,7 +130,7 @@
                 pstmt.close();
 
                 sql="select * from " +
-                        "(select @rownum:=@rownum-1 as rownumber, username, title, datetime, hit " +
+                        "(select @rownum:=@rownum-1 as rownumber, number, username, title, datetime, hit " +
                         "from board where (@rownum:=?)=?) A where rownumber>? and rownumber<=? " +
                         "order by rownumber asc";
                 pstmt=conn.prepareStatement(sql);
@@ -150,11 +150,11 @@
         <%
                 } else {
                     while(rs.next()) {
-                        int number=rs.getInt(1);
-                        String username=rs.getString(2);
-                        String title=rs.getString(3);
-                        String datetime=rs.getString(4);
-                        int hit=rs.getInt(5);
+                        int number=rs.getInt(2);
+                        String username=rs.getString(3);
+                        String title=rs.getString(4);
+                        String datetime=rs.getString(5);
+                        int hit=rs.getInt(6);
                         %>
         <tr onclick="location.href='./view/?contentNumber=<%=number%>'">
             <td><%=number%></td>
