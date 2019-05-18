@@ -16,8 +16,8 @@
     int pageBlock = 5;
     int cpage = request.getParameter("pageNum") != null ? Integer.parseInt(request.getParameter("pageNum")) : 1;
     int total = 0;
-    int EndNo = pageSize * cpage;
-    int StartNo = EndNo - pageSize;
+    int endNo = pageSize * cpage;
+    int startNo = endNo - pageSize;
     int totalPage = 0;
 
     int prevBlock = (int)Math.floor((cpage - 1) / pageBlock) * pageBlock;
@@ -123,19 +123,21 @@
                     total=rs.getInt(1);
                 }
                 rs.close();
+
                 sql="SET @rownum:=0";
                 pstmt=conn.prepareStatement(sql);
                 pstmt.execute();
                 pstmt.close();
 
                 sql="select * from " +
-                        "(select @rownum:=@rownum+1 as rownumber, username, title, datetime, hit " +
-                        "from board where @rownum:=0=0) A " +
-                        "where rownumber>? and rownumber<=? " +
-                        "order by rownumber desc";
+                        "(select @rownum:=@rownum-1 as rownumber, username, title, datetime, hit " +
+                        "from board where (@rownum:=?)=?) A where rownumber>? and rownumber<=? " +
+                        "order by rownumber asc";
                 pstmt=conn.prepareStatement(sql);
-                pstmt.setInt(1, StartNo);
-                pstmt.setInt(2, EndNo);
+                pstmt.setInt(1, total+1);
+                pstmt.setInt(2, total+1);
+                pstmt.setInt(3, startNo);
+                pstmt.setInt(4, endNo);
                 rs=pstmt.executeQuery();
                 pstmt.close();
         %>
