@@ -36,24 +36,24 @@
 <body>
 <header>
     <nav class="customnavbar navbar navbar-expand-sm navbar-dark bg-dark" id="mainNav">
-        <a class="navbar-brand" href="#">CODE WIKI</a>
+        <a class="navbar-brand" href="../wiki/?codeID=codewiki">CODE WIKI</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             Menu
         </button>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">최근 변경 <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../lately/?isLately=1">최근 변경</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         특수 기능
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu active" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="../board">게시판</a>
                         <a class="dropdown-item" href="../lately">편집된 지 오래된 문서</a>
-                        <a class="dropdown-item" href="./">내용이 짧은 문서</a>
-                        <a class="dropdown-item" href="./?shortText=0">내용이 긴 문서</a>
+                        <a class="dropdown-item <%if(shortText==1) { %>active <% }%>" href="./">내용이 짧은 문서</a>
+                        <a class="dropdown-item <%if(shortText==0) { %>active <% }%>" href="./?shortText=0">내용이 긴 문서</a>
                         <a class="dropdown-item" href="../search/suffle.jsp">무작위 문서</a>
                     </div>
                 </li>

@@ -68,7 +68,7 @@
             response.sendRedirect("../board/write");
         }
         else
-            response.sendRedirect("../index.jsp");
+            response.sendRedirect("../wiki/?codeID=codewiki");
     }
     else {
         out.println("<script>alert('ID 또는 패스워드가 맞지 않습니다.');history.back()</script>");

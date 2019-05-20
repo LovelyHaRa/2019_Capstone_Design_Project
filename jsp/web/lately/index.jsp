@@ -12,6 +12,8 @@
     String rst="success";
     String msg="";
 
+    int isLately = request.getParameter("isLately") != null ? Integer.parseInt(request.getParameter("isLately")) : 0;
+
 %>
 <!DOCTYPE html>
 <html lang="ko">
@@ -34,22 +36,22 @@
 <body>
 <header>
     <nav class="customnavbar navbar navbar-expand-sm navbar-dark bg-dark" id="mainNav">
-        <a class="navbar-brand" href="#">CODE WIKI</a>
+        <a class="navbar-brand" href="../wiki/?codeID=codewiki">CODE WIKI</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             Menu
         </button>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">최근 변경 <span class="sr-only">(current)</span></a>
+                <li class="nav-item <%if(isLately==1) { %>active <% }%>">
+                    <a class="nav-link" href="./?isLately=1">최근 변경 <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown <%if(isLately==0) { %>active <% }%>">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         특수 기능
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="../board">게시판</a>
-                        <a class="dropdown-item" href="./">편집된 지 오래된 문서</a>
+                        <a class="dropdown-item <%if(isLately==0) { %>active <% }%>" href="./">편집된 지 오래된 문서</a>
                         <a class="dropdown-item" href="../contentlist">내용이 짧은 문서</a>
                         <a class="dropdown-item" href="../contentlist/?shortText=0">내용이 긴 문서</a>
                         <a class="dropdown-item" href="../search/suffle.jsp">무작위 문서</a>
@@ -89,7 +91,20 @@
 
 <section>
     <div class="listTitle">
+
+    </div>
+    <div class="listTitle">
+        <%
+            if(isLately==1) {
+        %>
+        <h5 class="h5">위키 문서 목록 : 최근 변경된 문서</h5>
+        <%
+        } else {
+        %>
         <h5 class="h5">위키 문서 목록 : 편집된지 오래된 문서</h5>
+        <%
+            }
+        %>
     </div>
     <table class="wikiList table table-hover table-striped text-center">
         <thead class="thead-dark">
@@ -106,10 +121,12 @@
                 Class.forName("org.mariadb.jdbc.Driver");
                 conn=DriverManager.getConnection("jdbc:mariadb://113.198.237.228:1521/code_wiki", "pi","!#deu1641");
 
+                String sorting=(isLately==1)?"desc":"asc";
+
                 sql="select * from " +
                         "(select varcode.varcode_num, varcode_name, varcode_docu.user_id, date, revision_docu " +
                         "from varcode inner join varcode_docu on varcode.varcode_num=varcode_docu.varcode_num " +
-                        "where lately_revision=revision_docu) A order by date asc";
+                        "where lately_revision=revision_docu) A order by date "+sorting;
                 pstmt=conn.prepareStatement(sql);
                 rs=pstmt.executeQuery();
                 pstmt.close();

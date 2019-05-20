@@ -23,7 +23,7 @@ $(function () {
     $('#goBtn1').click(function () {
         var query=$('#searchInput').val();
         if(query !="")
-            location.href="../direct.jsp?query="+query;
+            location.href="./direct.jsp?query="+query;
         return false;
     });
 

@@ -34,14 +34,14 @@
 <body>
 <header>
     <nav class="customnavbar navbar navbar-expand-sm navbar-dark bg-dark" id="mainNav">
-        <a class="navbar-brand" href="#">CODE WIKI</a>
+        <a class="navbar-brand" href="../wiki/?codeID=codewiki">CODE WIKI</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             Menu
         </button>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">최근 변경 <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../lately/?isLately=1">최근 변경</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -129,8 +129,8 @@
                     CKEDITOR.replace('editor1', {
                         height: 250,
                         filebrowserImageUploadUrl: '/ckeditor/upload.jsp?'
-                        +'realUrl=http://localhost:8080/wiki/image'
-                        +'&realDir=${pageContext.request.contextPath}/wiki/image'
+                            +'realUrl=http://localhost:8080/wiki/image'
+                            +'&realDir=${pageContext.request.contextPath}/wiki/image'
                     });
                     <%
                     if(contentText!=null) {

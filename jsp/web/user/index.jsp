@@ -24,14 +24,14 @@
 <body>
 <header>
     <nav class="customnavbar navbar navbar-expand-sm navbar-dark bg-dark" id="mainNav">
-        <a class="navbar-brand" href="#">CODE WIKI</a>
+        <a class="navbar-brand" href="../wiki/?codeID=codewiki">CODE WIKI</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             Menu
         </button>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">최근 변경 <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../lately/?isLately=1">최근 변경</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,17 +45,17 @@
                         <a class="dropdown-item" href="../search/suffle.jsp">무작위 문서</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <%
                         // 로그아웃 상태
                         if (ID == null) {
                     %>
-                    <a class="nav-link" href="#">My Page</a>
+                    <a class="nav-link" href="#">My Page <span class="sr-only">(current)</span></a>
                     <%
                         // 로그인 상태
                     } else {
                     %>
-                    <a class="nav-link" href="#"><%= name %> My Page</a>
+                    <a class="nav-link" href="#"><%= name %> My Page <span class="sr-only">(current)</span></a>
                     <%
                         }
                     %>
@@ -69,10 +69,10 @@
       </span>
         <input type="text" id="searchInput" class="form-control" placeholder="위키 검색" tabindex="1">
         <span>
-        <button id="searchBtn1" class="imgsearch btnsearch btn btn-outline-secondary" type="button"></button>
+        <button id="searchBtn" class="imgsearch btnsearch btn btn-outline-secondary" type="button"></button>
       </span>
         <span>
-        <button id="goBtn1" class="imggo btnsearch btn btn-outline-secondary" type="button"></button>
+        <button id="goBtn" class="imggo btnsearch btn btn-outline-secondary" type="button"></button>
       </span>
     </div>
 </header>
