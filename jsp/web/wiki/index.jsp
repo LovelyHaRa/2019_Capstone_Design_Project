@@ -8,6 +8,7 @@
   String nameText="";
   String dateText="";
   String codeID=request.getParameter("codeID");
+  String replaceText="";
 
   Connection conn=null;
   PreparedStatement pstmt=null;
@@ -128,6 +129,7 @@
           contentText=rs.getString("data");
           dateText=rs.getString("date");
         }
+        replaceText=contentText.replaceAll("\r\n","");
       } catch (SQLException e) {
         contentText = "위키 DB에 접속할 수 없습니다.";
       } finally {
@@ -159,7 +161,7 @@
     <div class="wiki-content">
       <% if(revision_num==0) {
         %>
-      <p><%= contentText %></p>
+      <p><%=replaceText%></p>
       <input type="button" class="btn btn-secondary" value="위키 문서 등록" onclick="location.href='../edit/?codeID=<%=codeID%>'">
       <%
       } else {
@@ -167,13 +169,14 @@
       <h2 class="h2"><%=nameText%></h2>
       <p class="strDate" style="text-align: right;">마지막 수정일 : <%=dateText%></p>
       <hr>
-      <%= contentText %>
+      <p><%= replaceText %></p>
       <%
       }
+      String submitText = replaceText.replaceAll("\"","&quot;");
       %>
       <form id="contentForm" action="../edit/?codeID=<%=codeID%>" method="post">
         <input type="text" hidden id="nameText" name="nameText" value="<%=nameText%>">
-        <input type="text" hidden id="contentText" name="contentText" value="<%=contentText%>">
+        <input type="text" hidden id="contentText" name="contentText" value="<%=submitText%>">
       </form>
     </div>
   </article>

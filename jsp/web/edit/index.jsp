@@ -134,12 +134,14 @@
                     });
                     <%
                     if(contentText!=null) {
+                        String submitText = contentText.replaceAll("&quot;","\"");
                     %>
-                        CKEDITOR.instances.editor1.setData('<%=contentText%>');
+                        CKEDITOR.instances.editor1.setData('<%=submitText%>');
                     <%
                     } else if(contentInSession!=null) {
+                        String submitText = contentInSession.replaceAll("&quot;","\"");
                     %>
-                        CKEDITOR.instances.editor1.setData('<%=contentInSession%>');
+                        CKEDITOR.instances.editor1.setData('<%=submitText%>');
                     <%
                     }
                     %>

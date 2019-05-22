@@ -7,137 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9a5cef2-49fa-4790-89ed-476299acdfb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/af.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/az.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/bn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/bs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/cy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/de-ch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/en-au.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/en-ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/en-gb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/eo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/es-mx.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/fa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/fo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/fr-ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/gu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/hi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/is.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/ka.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/km.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/ku.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/mk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/mn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/ms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/no.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/oc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/pt-br.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/si.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/sq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/sr-latn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/sr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/tt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/ug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/lang/zh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/Audio/dialogs/audio.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/Audio/docs/install.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/Audio/docs/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/Audio/images/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/Audio/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/Audio/images/placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/balloonpanel/skins/kama/balloonpanel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/balloonpanel/skins/moono-lisa/balloonpanel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/balloonpanel/skins/moono-lisa/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/balloonpanel/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/balloonpanel/skins/moono/balloonpanel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/balloonpanel/skins/moono/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/balloonpanel/skins/moono/images/hidpi/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/balloontoolbar/skins/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/balloontoolbar/skins/kama/balloontoolbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/balloontoolbar/skins/moono-lisa/balloontoolbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/balloontoolbar/skins/moono/balloontoolbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/ckeditor-gwf-plugin/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/ckeditor-gwf-plugin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/ckeditor-gwf-plugin/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/easyimage/dialogs/easyimagealt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/easyimage/styles/easyimage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/gg/images/gg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/html5video/dialogs/html5video.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/image2/dialogs/image2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/imagebase/styles/imagebase.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/imagepaste/docs/install.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/imagepaste/docs/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/linkayt/reseve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/simage/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/plugins/simage/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/samples/old/easyimage/easyimage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/samples/old/image2/assets/image1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/samples/old/image2/assets/image2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ckeditor/samples/old/image2/image2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/board/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/board/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/board/modify/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/board/modify/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/board/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/board/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/board/write/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/board/write/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/build-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/build-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/ckeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/lang/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/plugins/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/plugins/icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/plugins/icons_hidpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/samples/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/editor_gecko.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/editor_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/editor_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/editor_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/icons_hidpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/contentlist/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/contentlist/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/edit/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/edit/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lately/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/lately/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/search/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/search/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/wiki/history/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/wiki/history/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/wiki/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/wiki/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -208,12 +79,12 @@
     <favorites_list name="jsp" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/edit/edit.jsp">
+        <entry file="file://$PROJECT_DIR$/web/wiki/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+            <state relative-caret-position="217">
+              <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -221,8 +92,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/edit/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="132" column="85" selection-start-line="132" selection-start-column="85" selection-end-line="132" selection-end-column="85" />
+            <state relative-caret-position="235">
+              <caret line="136" column="74" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -289,7 +169,6 @@
         <option value="$PROJECT_DIR$/web/js/search.js" />
         <option value="$PROJECT_DIR$/web/login/login.jsp" />
         <option value="$PROJECT_DIR$/web/wiki/history/index.jsp" />
-        <option value="$PROJECT_DIR$/web/wiki/index.jsp" />
         <option value="$PROJECT_DIR$/web/search/index.jsp" />
         <option value="$PROJECT_DIR$/web/user/index.jsp" />
         <option value="$PROJECT_DIR$/web/css/bootstrap/bootstrap.css" />
@@ -299,6 +178,7 @@
         <option value="$PROJECT_DIR$/web/board/modify/index.jsp" />
         <option value="$PROJECT_DIR$/web/contentlist/index.jsp" />
         <option value="$PROJECT_DIR$/web/board/index.jsp" />
+        <option value="$PROJECT_DIR$/web/wiki/index.jsp" />
         <option value="$PROJECT_DIR$/web/edit/index.jsp" />
       </list>
     </option>
@@ -311,10 +191,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="125" />
-    <option name="y" value="19" />
-    <option name="width" value="1244" />
-    <option name="height" value="995" />
+    <option name="x" value="-7" />
+    <option name="width" value="1432" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -323,7 +202,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,6 +218,26 @@
               <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="board" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="board" type="462c0819:PsiDirectoryNode" />
+              <item name="modify" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="board" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="ckeditor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -348,16 +246,29 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="edit" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="wiki" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558362204645" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558501499009" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -507,7 +418,9 @@
       <workItem from="1558337198773" duration="1643000" />
       <workItem from="1558343601022" duration="2275000" />
       <workItem from="1558357491453" duration="1367000" />
-      <workItem from="1558360530879" duration="1569000" />
+      <workItem from="1558360530879" duration="2050000" />
+      <workItem from="1558399552235" duration="57000" />
+      <workItem from="1558495466049" duration="3427000" />
     </task>
     <task id="LOCAL-00001" summary="게시판 구현">
       <created>1558057631562</created>
@@ -544,12 +457,12 @@
       <option name="project" value="LOCAL" />
       <updated>1558195567085</updated>
     </task>
-    <task id="LOCAL-00006" summary="header 디자인 완료">
-      <created>1553772604855</created>
+    <task id="LOCAL-00006" summary="기능 구현 완료">
+      <created>1558362413711</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1553772604855</updated>
+      <updated>1558362413711</updated>
     </task>
     <task id="LOCAL-00007" summary="create login feacture">
       <created>1555318111013</created>
@@ -579,11 +492,11 @@
       <option name="project" value="LOCAL" />
       <updated>1556701974926</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60172000" />
+    <option name="totallyTimeSpent" value="64137000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -595,10 +508,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="179" y="36" width="1244" height="995" extended-state="0" />
+    <frame x="-7" y="0" width="1432" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.15287162" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.13629737" />
       <window_info id="Structure" order="1" sideWeight="0.50082916" side_tool="true" weight="0.17064352" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -608,15 +521,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49493244" visible="true" weight="0.30081302" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.37677985" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4941691" weight="0.28368017" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49854228" visible="true" weight="0.37677985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49962547" weight="0.32951945" />
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49962547" weight="0.32837528" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32968238" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5050676" side_tool="true" visible="true" weight="0.30081302" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50145775" side_tool="true" weight="0.37677985" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32868758" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32968238" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -658,16 +571,35 @@
     <MESSAGE value="게시판 구현" />
     <MESSAGE value="게시판 페이징 구현" />
     <MESSAGE value="특수기능 구현 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="특수기능 구현 완료" />
+    <MESSAGE value="기능 구현 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="기능 구현 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/login/index.jsp</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/web/wiki/index.jsp</url>
+          <line>161</line>
           <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/wiki/index.jsp</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/wiki/index.jsp</url>
+          <line>178</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/edit/index.jsp</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -768,23 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="70" column="59" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/board/modify/modify.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -813,24 +728,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/wiki/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/user/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1332">
           <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/board/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -895,15 +796,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/edit/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
+        <state relative-caret-position="577">
           <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/board/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="70" column="59" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/board/modify/modify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-597" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/wiki/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="174" column="6" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/edit/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="132" column="85" selection-start-line="132" selection-start-column="85" selection-end-line="132" selection-end-column="85" />
+        <state relative-caret-position="235">
+          <caret line="136" column="74" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
         </state>
       </provider>
     </entry>
