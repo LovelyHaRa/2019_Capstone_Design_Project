@@ -23,7 +23,7 @@
 <body>
   <header>
     <nav class="customnavbar navbar navbar-expand-sm navbar-dark bg-dark" id="mainNav">
-      <a class="navbar-brand" href="#">CODE WIKI</a>
+      <a class="navbar-brand" href="./wiki/?codeID=codewiki">CODE WIKI</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         Menu
       </button>

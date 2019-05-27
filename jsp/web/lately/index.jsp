@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Comfortaa|Noto+Sans+KR|Nanum+Gothic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
     <link rel="stylesheet" href="../css/list.css" type="text/css">
-
+    <link rel="stylesheet" href="../css/fontstyle.css" type="text/css">
 </head>
 <body>
 <header>
@@ -106,7 +106,7 @@
             }
         %>
     </div>
-    <table class="wikiList table table-hover table-striped text-center">
+    <table class="wikiList table table-hover table-striped text-center font-NG">
         <thead class="thead-dark">
         <tr>
             <th>코드</th>

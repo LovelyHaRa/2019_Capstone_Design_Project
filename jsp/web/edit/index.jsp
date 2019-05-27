@@ -100,7 +100,7 @@
     %>
     <div class="wiki-editor">
         <div class="editor-header">
-            <h3 class="h3"><%= codeID %> 문서 작성/편집</h3>
+            <h5 class="h5 font-NG"><%= codeID %> 문서 작성/편집</h5>
         </div>
         <div class="editor-section input-group">
             <form id="formEdit" method="post" action="edit.jsp" accept-charset="UTF-8">
