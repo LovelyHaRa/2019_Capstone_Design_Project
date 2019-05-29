@@ -2,6 +2,18 @@
 <%@page import="java.sql.*"%>
 <%
   request.setCharacterEncoding("UTF-8");
+  try {
+    Cookie[] cookies = request.getCookies();
+
+    if(cookies!=null) {
+      for(int i=0;i<cookies.length;i++) {
+        if(cookies[i].getName().equals("codewikiID") && cookies[i].getMaxAge()>0)
+          session.setAttribute("ID", cookies[i].getValue());
+        else if(cookies[i].getName().equals("codewikiUserName") && cookies[i].getMaxAge()>0)
+          session.setAttribute("name", cookies[i].getValue());
+      }
+    }
+  } catch (Exception e) { }
   String ID = (String)session.getAttribute("ID");
   String name = (String)session.getAttribute("name");
   String contentText="코드에 대한 위키내용을 찾을 수 없습니다.";

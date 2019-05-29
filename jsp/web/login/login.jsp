@@ -5,6 +5,8 @@
     String ID = request.getParameter("ID");
     String pw = request.getParameter("pw");
     String codeID = request.getParameter("codeID");
+    String remember= request.getParameter("remember") != null ? request.getParameter("remember") : "";
+
     boolean toEdit;
     boolean toWrite;
     try {
@@ -60,6 +62,30 @@
 %>
 <%
     if(rst.equals("success")) {
+        if(remember.equals("yes")) {
+            Cookie cookie = new Cookie("codewikiID", ID);
+            cookie.setMaxAge(60*60*24*365);
+            cookie.setPath("/");
+            response.addCookie(cookie);
+            Cookie cookie2 = new Cookie("codewikiUserName", name);
+            cookie2.setMaxAge(60*60*24*365);
+            cookie2.setPath("/");
+            response.addCookie(cookie2);
+        } else {
+            try {
+                Cookie[] cookies = request.getCookies();
+
+                if(cookies!=null) {
+                    for(int i=0;i<cookies.length;i++) {
+                        if (cookies[i].getName().equals("codewikiID") ||
+                                cookies[i].getName().equals("codewikiUserName")) {
+                            cookies[i].setMaxAge(-1);
+                            response.addCookie(cookies[i]);
+                        }
+                    }
+                }
+            } catch (Exception e) { }
+        }
         if (toEdit) {
             session.setAttribute("toEdit",new Boolean(false));
             response.sendRedirect("../edit/?codeID=" + codeID);

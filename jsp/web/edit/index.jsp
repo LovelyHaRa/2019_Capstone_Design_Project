@@ -127,10 +127,7 @@
                 <textarea name="editor1" id="editor1"></textarea>
                 <script type="text/javascript">
                     CKEDITOR.replace('editor1', {
-                        height: 250,
-                        filebrowserImageUploadUrl: '/ckeditor/upload.jsp?'
-                            +'realUrl=http://localhost:8080/wiki/image'
-                            +'&realDir=${pageContext.request.contextPath}/wiki/image'
+                        height: 400
                     });
                     <%
                     if(contentText!=null) {

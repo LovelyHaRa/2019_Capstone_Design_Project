@@ -34,14 +34,14 @@
             <input type="text" name="codeID" id="codeID" hidden value="<%= codeID %>">
             <div class="checkbox mb-3">
                 <label>
-                    <input type="checkbox" value="remember-me" class="check"> <span style="font-size: 0.9em;"> ID/PW 저장</span>
+                    <input type="checkbox" id="remember" name="remember" value="yes" class="check"> <span style="font-size: 0.9em;"> 자동 로그인</span>
                 </label>
             </div>
             <button class="btn btn-secondary btn-block" type="submit" id="btnLogin">로그인</button>
         </div>
         <div class="card-footer">
             <p class="font-NG">아직 회원이 아니라면? <a href="../join/index.jsp">회원가입</a></p>
-            <p class="font-NG"><a href="#">ID/PW 찾기</a></p>
+            <p class="font-NG"><a href="findpassword.jsp">비밀번호 찾기</a></p>
         </div>
     </form>
 </div>
