@@ -1,0 +1,32 @@
+.boardList {
+    width: 98%;
+    margin-top: 30px;
+    margin-left: 1%;
+    font-size: 0.7em;
+}
+
+.writeAction {
+    text-align: center;
+    margin-right: 1%;
+}
+
+#writeForm {
+    margin-top: 30px;
+    width: 98%;
+    margin-left: 1%;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.board-content {
+    width: 96%;
+    margin-top: 30px;
+    margin-left: 2%;
+}
+
+.viewButton {
+    margin-top: 30px;
+}
