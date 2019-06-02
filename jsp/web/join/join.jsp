@@ -58,7 +58,7 @@
 %>
 <%
     if(rst.equals("success")) {
-        out.println("<script>alert('회원가입이 완료되었습니다.');window.location.href=\"../index.jsp\"</script>");
+        out.println("<script>alert('회원가입이 완료되었습니다.');window.location.href=\"../wiki/?codeID=codewiki\"</script>");
     }
     else {
         if(rst.equals("중복아이디"))
