@@ -7,92 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92944e5d-8aaf-459b-9e18-0db976139d35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/css/findpassword.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/findpassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login/changePW.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login/changepassword.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login/findID.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login/findpassword.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/wiki/imageswiki/01" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/mypage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/mypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/user/leave.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/user/update.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JAX_WS_Apache_Axis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/JAX_WS_Apache_Axis.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/ckeditor/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/css/samples.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/img/github-top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/img/header-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/img/header-separator.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/img/navigation-tip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/js/sample.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/js/sf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/ajax.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/api.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/appendto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/assets/inlineall/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/assets/posteddata.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/assets/sample.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/assets/uilanguages/languages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/datafiltering.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/dialog/assets/my_dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/dialog/dialog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/divreplace.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/easyimage/easyimage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/enterkey/enterkey.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/htmlwriter/outputforflash.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/htmlwriter/outputhtml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/image2/assets/image1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/image2/assets/image2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/image2/image2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/inlineall.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/inlinebycode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/inlinetextarea.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/jquery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/magicline/magicline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/readonly.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/replacebyclass.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/replacebycode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/sample.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/sample.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/sample_posteddata.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/tabindex.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/toolbar/toolbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/uicolor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/uilanguages.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/wysiwygarea/fullpage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/old/xhtmlstyle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/css/fontello.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/font/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/font/fontello.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/font/fontello.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/font/fontello.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/edit/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/edit/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/logout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/logout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/wiki/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/wiki/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/user.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,79 +26,92 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/jsp$Tomcat.ic" NAME="Tomcat Coverage Results" MODIFIED="1557936256747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="code_wiki@113.198.237.228" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="code_wiki@113.198.237.228" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="code_wiki@113.198.237.228" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="code_wiki: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/web/user/index.jsp">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="432">
+                    <caret line="103" column="123" selection-start-line="103" selection-start-column="123" selection-end-line="103" selection-end-column="123" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="jsp" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login/login.jsp">
+        <entry file="file://$PROJECT_DIR$/web/user/update.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="96" column="59" lean-forward="true" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login/findpassword.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="25" column="95" selection-start-line="25" selection-start-column="95" selection-end-line="25" selection-end-column="95" />
+            <state relative-caret-position="270">
+              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/login/index.jsp">
+        <entry file="file://$PROJECT_DIR$/web/user/leave.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+            <state relative-caret-position="428">
+              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login/changepassword.jsp">
+        <entry file="file://$PROJECT_DIR$/web/js/mypage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="536">
+              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login/findID.jsp">
+        <entry file="file://$PROJECT_DIR$/web/css/mypage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login/changePW.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/findpassword.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/findpassword.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="1602">
+              <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -186,9 +121,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Jsp File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>signin</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>mypage</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
@@ -211,6 +155,11 @@
         <option value="$PROJECT_DIR$/web/login/changePW.jsp" />
         <option value="$PROJECT_DIR$/web/login/findID.jsp" />
         <option value="$PROJECT_DIR$/web/login/index.jsp" />
+        <option value="$PROJECT_DIR$/web/css/mypage.css" />
+        <option value="$PROJECT_DIR$/web/user/index.jsp" />
+        <option value="$PROJECT_DIR$/web/js/mypage.js" />
+        <option value="$PROJECT_DIR$/web/user/update.jsp" />
+        <option value="$PROJECT_DIR$/web/user/leave.jsp" />
       </list>
     </option>
   </component>
@@ -223,7 +172,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1418" />
+    <option name="width" value="1345" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -233,7 +182,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,6 +193,32 @@
               <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="board" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="board" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="board" type="462c0819:PsiDirectoryNode" />
+              <item name="write" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="join" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
@@ -262,18 +236,26 @@
               <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="wiki" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559137497475" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559485239624" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -428,14 +410,17 @@
       <workItem from="1559060128607" duration="375000" />
       <workItem from="1559115753413" duration="5695000" />
       <workItem from="1559121518274" duration="3391000" />
-      <workItem from="1559125312481" duration="9954000" />
+      <workItem from="1559125312481" duration="10675000" />
+      <workItem from="1559377895580" duration="513000" />
+      <workItem from="1559397192137" duration="9493000" />
+      <workItem from="1559463180809" duration="5325000" />
     </task>
-    <task id="LOCAL-00001" summary="게시판 구현">
-      <created>1558057631562</created>
+    <task id="LOCAL-00001" summary="자동로그인, 비밀번호 찾기 구현">
+      <created>1559137585006</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1558057631562</updated>
+      <updated>1559137585006</updated>
     </task>
     <task id="LOCAL-00002" summary="게시판 구현">
       <created>1558058742816</created>
@@ -500,16 +485,17 @@
       <option name="project" value="LOCAL" />
       <updated>1556701974926</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13384000" />
+    <option name="totallyTimeSpent" value="29436000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1418" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="1345" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.15022092" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.16498055" />
       <window_info id="Structure" order="1" sideWeight="0.50082916" side_tool="true" weight="0.17064352" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -539,7 +525,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.20913108" />
+      <window_info anchor="right" id="Database" order="6" weight="0.30739298" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.23454158" />
@@ -572,7 +558,8 @@
     <MESSAGE value="기능 구현 완료" />
     <MESSAGE value="1차 수정" />
     <MESSAGE value="폰트 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="폰트 변경" />
+    <MESSAGE value="자동로그인, 비밀번호 찾기 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="자동로그인, 비밀번호 찾기 구현" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -665,27 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/findpassword.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/findpassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="96" column="59" lean-forward="true" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/login/logout.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -700,6 +666,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/login/findpassword.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="95" selection-start-line="25" selection-start-column="95" selection-end-line="25" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/login/changepassword.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -707,31 +680,131 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/login/findID.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/login/changePW.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/findID.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/findpassword.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+        <state relative-caret-position="1566">
+          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/findpassword.jsp">
+    <entry file="file://$PROJECT_DIR$/web/js/findpassword.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="25" column="95" selection-start-line="25" selection-start-column="95" selection-end-line="25" selection-end-column="95" />
+        <state relative-caret-position="396">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/login/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+        <state relative-caret-position="270">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/user.css" />
+    <entry file="file://$PROJECT_DIR$/web/board/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3744" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/board/view/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="143" column="4" lean-forward="true" selection-start-line="143" selection-start-column="4" selection-end-line="148" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="61" column="2" lean-forward="true" selection-start-line="32" selection-end-line="61" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/join.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="3" lean-forward="true" selection-end-line="41" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/join.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/join/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/mypage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1602">
+          <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://0647746c-5076-4aee-bb2e-b2d72a984964/schema/code_wiki/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/user/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="103" column="123" selection-start-line="103" selection-start-column="123" selection-end-line="103" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/mypage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/join/join.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="46" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/user/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/user/leave.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
         </state>
       </provider>
     </entry>
