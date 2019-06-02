@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="jsp:war" />
+      <artifact name="jsp" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92944e5d-8aaf-459b-9e18-0db976139d35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/css/mypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/mypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/user/leave.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/user/update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/user.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,62 +49,16 @@
     </expand>
     <select />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/web/user/index.jsp">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="432">
-                    <caret line="103" column="123" selection-start-line="103" selection-start-column="123" selection-end-line="103" selection-end-column="123" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="jsp" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/user/update.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/user/leave.jsp">
+        <entry file="file://$PROJECT_DIR$/web/join/join.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/mypage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/mypage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1602">
-              <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+            <state relative-caret-position="402">
+              <caret line="60" column="100" selection-start-line="60" selection-start-column="100" selection-end-line="60" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -144,6 +91,11 @@
       </map>
     </option>
   </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="LovelyHaRa" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="2019_Capstone_Design_Project" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -160,6 +112,7 @@
         <option value="$PROJECT_DIR$/web/js/mypage.js" />
         <option value="$PROJECT_DIR$/web/user/update.jsp" />
         <option value="$PROJECT_DIR$/web/user/leave.jsp" />
+        <option value="$PROJECT_DIR$/web/join/join.jsp" />
       </list>
     </option>
   </component>
@@ -171,9 +124,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1345" />
-    <option name="height" value="1047" />
+    <option name="x" value="83" />
+    <option name="y" value="105" />
+    <option name="width" value="1639" />
+    <option name="height" value="838" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -181,7 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,33 +151,7 @@
               <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="board" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="board" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="board" type="462c0819:PsiDirectoryNode" />
-              <item name="write" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="join" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
@@ -236,25 +163,20 @@
               <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="wiki" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559485239624" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559486432433" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
@@ -413,7 +335,8 @@
       <workItem from="1559125312481" duration="10675000" />
       <workItem from="1559377895580" duration="513000" />
       <workItem from="1559397192137" duration="9493000" />
-      <workItem from="1559463180809" duration="5325000" />
+      <workItem from="1559463180809" duration="5865000" />
+      <workItem from="1559486271214" duration="154000" />
     </task>
     <task id="LOCAL-00001" summary="자동로그인, 비밀번호 찾기 구현">
       <created>1559137585006</created>
@@ -422,12 +345,12 @@
       <option name="project" value="LOCAL" />
       <updated>1559137585006</updated>
     </task>
-    <task id="LOCAL-00002" summary="게시판 구현">
-      <created>1558058742816</created>
+    <task id="LOCAL-00002" summary="VER 1.0">
+      <created>1559485269707</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1558058742816</updated>
+      <updated>1559485269707</updated>
     </task>
     <task id="LOCAL-00003" summary="게시판 페이징 구현">
       <created>1558156731857</created>
@@ -485,17 +408,17 @@
       <option name="project" value="LOCAL" />
       <updated>1556701974926</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29436000" />
+    <option name="totallyTimeSpent" value="30130000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1345" height="1047" extended-state="0" />
+    <frame x="83" y="105" width="1639" height="838" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.16498055" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.13552882" />
       <window_info id="Structure" order="1" sideWeight="0.50082916" side_tool="true" weight="0.17064352" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -505,7 +428,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49484536" visible="true" weight="0.2595838" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49484536" weight="0.2595838" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49854228" weight="0.37677985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -525,7 +448,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.30739298" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.25015834" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.23454158" />
@@ -559,7 +482,8 @@
     <MESSAGE value="1차 수정" />
     <MESSAGE value="폰트 변경" />
     <MESSAGE value="자동로그인, 비밀번호 찾기 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="자동로그인, 비밀번호 찾기 구현" />
+    <MESSAGE value="VER 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="VER 1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -652,13 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/logout.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/wiki/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3113">
@@ -684,13 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
           <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/changePW.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -766,6 +676,34 @@
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/mypage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/user/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login/logout.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/user/leave.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="53" column="94" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://0647746c-5076-4aee-bb2e-b2d72a984964/schema/code_wiki/table/user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -780,31 +718,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/mypage.js">
+    <entry file="file://$PROJECT_DIR$/web/login/changePW.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        <state relative-caret-position="510">
+          <caret line="58" column="97" lean-forward="true" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/join/join.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="46" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/user/update.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/user/leave.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        <state relative-caret-position="402">
+          <caret line="60" column="100" selection-start-line="60" selection-start-column="100" selection-end-line="60" selection-end-column="100" />
         </state>
       </provider>
     </entry>
