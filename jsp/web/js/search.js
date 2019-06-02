@@ -1,4 +1,11 @@
 $(function () {
+   $('#searchInput').keydown(function (key) {
+       if(key.keyCode==13) {
+           $("#searchBtn").trigger("click");
+           $("#searchBtn1").trigger("click");
+           $("#searchBtn2").trigger("click");
+       }
+   });
    $('#searchBtn').click(function () {
        var query=$('#searchInput').val();
        if(query !="")
