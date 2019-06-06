@@ -30,19 +30,24 @@
             return;
         }
 
-        sql="select count(*) from varcode where varcode_name LIKE '"+query+"'";
+        sql="select count(*), varcode_num from varcode where varcode_name LIKE '%"+query+"%'";
         pstmt=conn.prepareStatement(sql);
         rs=pstmt.executeQuery();
         pstmt.close();
 
         if(rs.next()) {
             docuCount=rs.getInt(1);
+            codeID=rs.getString(2);
             if(docuCount>1) {
                 response.sendRedirect("./?query="+URLEncoder.encode(query, "UTF-8"));
                 return;
+            } else if(docuCount==1) {
+                response.sendRedirect("../wiki/?codeID="+codeID);
+                return;
             }
-        }
 
+        }
+        /*
         sql="select varcode_num from varcode where varcode_name LIKE '"+query+"'";
         pstmt=conn.prepareStatement(sql);
         rs=pstmt.executeQuery();
@@ -53,6 +58,7 @@
             response.sendRedirect("../wiki/?codeID="+codeID);
             return;
         }
+        */
 
         response.sendRedirect("./?query="+URLEncoder.encode(query, "UTF-8"));
 
