@@ -77,14 +77,14 @@
     </nav>
     <div class="input-group search-box">
       <span class="input-group-btn left-search-btns">
-        <a class="imgshuffle btnsearch btn btn-outline-secondary" href="../search/suffle.jsp" role="button"></a>
+        <a class="imgshuffle btnsearch btn btn-outline-secondary" href="../../search/suffle.jsp" role="button"></a>
       </span>
         <input type="text" id="searchInput" class="form-control" placeholder="위키 검색" tabindex="1">
         <span>
-        <button id="searchBtn" class="imgsearch btnsearch btn btn-outline-secondary" type="button"></button>
+        <button id="searchBtn2" class="imgsearch btnsearch btn btn-outline-secondary" type="button"></button>
       </span>
         <span>
-        <button id="goBtn" class="imggo btnsearch btn btn-outline-secondary" type="button"></button>
+        <button id="goBtn2" class="imggo btnsearch btn btn-outline-secondary" type="button"></button>
       </span>
     </div>
 </header>
@@ -152,5 +152,6 @@
 <!--JavaScript-->
 <script src="../../js/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
 <script src="../../js/bootstrap/bootstrap.bundle.js" type="text/javascript"></script>
+<script src="../../js/search.js" type="text/javascript"></script>
 </body>
 </html>
