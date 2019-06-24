@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CODE_WIKI</string>
+    <string name="title">CODE WIKI</string>
+    <string name="start">시작</string>
+    <string name="codeinfo">코드 내용</string>
+    <string name="codetype">코드 유형</string>
+    <string name="resultscan">스캔 결과</string>
+    <string name="infotype">내용 유형</string>
+    <string name="scanimage">스캔 이미지</string>
+    <string name="scan_activity_title">코드 스캔</string>
+    <string name="ok">확인</string>
+    <string name="title_activity_settings">설정</string>
+</resources>
