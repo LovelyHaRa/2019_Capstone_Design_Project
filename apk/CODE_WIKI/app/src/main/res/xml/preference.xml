@@ -1,0 +1,11 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="코드 스캔">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="url_quick_view"
+            android:summaryOff="코드결과가 URL일 경우 바로 접속"
+            android:summaryOn="코드결과가 URL일 경우 바로 접속"
+            android:title="URL 바로 접속" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuFlashOn"
+        android:icon="@drawable/ic_action_flashon"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuFlashOFF"
+        android:icon="@drawable/ic_action_flashoff"
+        android:title="Item"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuSetting"
+        android:icon="@drawable/ic_action_setting"
+        android:title="Item"
+        app:showAsAction="ifRoom" />
+</menu>
